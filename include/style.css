@@ -1,0 +1,83 @@
+@font-face {
+	font-family: HiraginoMinchoPro;
+	src: url("hiragino-mincho-pro-w3.otf") format("opentype");
+}
+
+@font-face {
+	font-family: HiraginoMinchoProBold;
+	font-weight: bold;
+	src: url("hiragino-mincho-pro-w3.otf") format("opentype");
+}
+
+h1,body { font-family: HiraginoMinchoPro, Helvetica, Verdana, Sans-Serif; }
+h2 { font-family: HiraginoMinchoProBold, Helvetica, Verdana, Sans-Serif; }
+
+.open { display: block; }
+.close { display: none; }
+
+.warning-cover {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.eva-alert {
+	text-decoration: underline;
+	cursor: pointer;
+	color: blue;
+	display: inline-block;
+	position: relative;
+}
+
+.eva-alert:hover {
+	color: red;
+}
+
+#eva-notice {
+	width: 500px;
+	height: auto;
+	text-align: center;
+	padding: 0.5%;
+	float: left;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -100px;
+	margin-left: -250px;
+	border-radius: 5px;
+	outline: none;
+	border: 3px solid rgba(249,143,72,0.9);
+	background-color: rgba(34,0,0,1);
+	text-shadow: 0 0 2.5px rgba(249,143,72,0.9);
+	font-size: 2em;
+	color: rgba(249,143,72,0.9);
+	text-transform: uppercase;
+	-webkit-transform: scale(1,1.13);
+	   -moz-transform: scale(1,1.13);
+	    -ms-transform: scale(1,1.13);
+	     -o-transform: scale(1,1.13);
+	        transform: scale(1,1.13);
+}
+
+.close_button {
+	display: block;
+	position: relative;
+	float: right;
+	background-color: black;
+	width: 100%;
+}
+
+	.close_button:hover, .close_button.active {
+		background-color: rgba(249,143,72,0.9);
+		color: rgba(34,0,0,1);
+		text-shadow: 0 0 2.5px rgba(34,0,0,1);
+	}
+
+.button {
+	cursor: pointer;
+	display: block;
+}
+
+.notice-text {
+	float: left;
+	position: relative;
+	display: block;
+}
