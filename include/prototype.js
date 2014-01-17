@@ -5,7 +5,7 @@
     var eva_notice, eva_alert_attribute, close_btn, notice_text, audio;
 
     audio = document.createElement('audio');
-    audio.setAttribute('src', 'include/audio/Beep_01.mp3');
+    audio.setAttribute('src', 'http://hectorleiva.com/assets/audio/Beep_01.mp3');
 
     $(document).on('click', '.eva-alert', function() {
         $body       = $(document.body);
